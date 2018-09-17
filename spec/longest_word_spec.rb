@@ -6,7 +6,9 @@ describe '#longest_word' do
     expect(longest_word("Here is the longest word")).to eq "longest"
   end
 
-  it 'should return last longest word' do
-    expect(longest_word("I have sinned and have fallen short")).to eq "fallen"
+  it 'returns last longest word' do
+    word = longest_word("I have sinned and have fallen short")
+    
+    expect(word).to eq "fallen"
   end
 end

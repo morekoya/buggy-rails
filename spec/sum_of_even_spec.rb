@@ -6,7 +6,9 @@ describe '#sum_of_even' do
     expect(sum_of_even(10, 16)).to eq 52
   end
 
-  it 'should return correct results with negative numbers included' do
-    expect(sum_of_even(-5, 6)).to eq 6
+  it 'returns correct results with negative numbers included' do
+    number = sum_of_even(-5, 6)
+    
+    expect(number).to eq 6
   end
 end
